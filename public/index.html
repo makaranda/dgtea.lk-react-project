@@ -10,34 +10,119 @@
       content="Web site created using create-react-app"
     />
     <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
-    <!--
-      manifest.json provides metadata used when your web app is installed on a
-      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
-    -->
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <!--
-      Notice the use of %PUBLIC_URL% in the tags above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
 
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
-    -->
-    <title>React App</title>
+    <title>DG Tea | Home</title>
+
+    <!-- Favicon -->
+    <link
+      rel="apple-touch-icon-precomposed"
+      sizes="144x144"
+      href="%PUBLIC_URL%/assets/ico/apple-touch-icon-144-precomposed.png"
+    />
+    <link rel="shortcut icon" href="%PUBLIC_URL%/assets/ico/favicon.ico" />
+
+    <!-- CSS Global -->
+    <link
+      href="%PUBLIC_URL%/assets/plugins/bootstrap/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="%PUBLIC_URL%/assets/plugins/bootstrap-select/css/bootstrap-select.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="%PUBLIC_URL%/assets/plugins/fontawesome/css/font-awesome.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="%PUBLIC_URL%/assets/plugins/prettyphoto/css/prettyPhoto.css"
+      rel="stylesheet"
+    />
+    <link
+      href="%PUBLIC_URL%/assets/plugins/owl-carousel2/assets/owl.carousel.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="%PUBLIC_URL%/assets/plugins/owl-carousel2/assets/owl.theme.default.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="%PUBLIC_URL%/assets/plugins/animate/animate.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Theme CSS -->
+    <link href="%PUBLIC_URL%/assets/css/theme.css" rel="stylesheet" />
+    <link
+      href="%PUBLIC_URL%/assets/css/theme-green-1.css"
+      rel="stylesheet"
+      id="theme-config-link"
+    />
+
+    <link rel="stylesheet" href="%PUBLIC_URL%/assets/css/paging.css" />
+
+    <link href="%PUBLIC_URL%/assets/css/mystyle.css" rel="stylesheet" />
+    <!-- Head Libs -->
+    <script src="%PUBLIC_URL%/assets/plugins/modernizr.custom.js"></script>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-166783507-3"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "UA-166783507-3");
+    </script>
   </head>
-  <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
+  <body id="home" class="boxed">
+    <div class="wrapper">
+      <noscript>You need to enable JavaScript to run this app.</noscript>
+      <div id="root"></div>
+    </div>
+    <!-- JS Global -->
+    <script src="%PUBLIC_URL%/assets/plugins/jquery/jquery-1.11.1.min.js"></script>
+    <script src="%PUBLIC_URL%/assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+    <script src="%PUBLIC_URL%/assets/plugins/bootstrap-select/js/bootstrap-select.min.js"></script>
+    <script src="%PUBLIC_URL%/assets/plugins/superfish/js/superfish.min.js"></script>
+    <script src="%PUBLIC_URL%/assets/plugins/prettyphoto/js/jquery.prettyPhoto.js"></script>
+    <script src="%PUBLIC_URL%/assets/plugins/owl-carousel2/owl.carousel.min.js"></script>
+    <!--         <script src="assets/plugins/jquery.sticky.min.js"></script> -->
+    <script src="%PUBLIC_URL%/assets/plugins/jquery.easing.min.js"></script>
+    <script src="%PUBLIC_URL%/assets/plugins/jquery.smoothscroll.min.js"></script>
+    <script src="%PUBLIC_URL%/assets/plugins/smooth-scrollbar.min.js"></script>
 
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
+    <!-- JS Page Level -->
+    <script src="%PUBLIC_URL%/assets/js/theme.js"></script>
 
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
+    <!--[if (gte IE 9)|!(IE)]><!-->
+    <script src="%PUBLIC_URL%/assets/plugins/jquery.cookie.js"></script>
+    <script src="%PUBLIC_URL%/assets/js/theme-config.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="%PUBLIC_URL%/assets/js/paging.min.js"></script>
+    <script src="%PUBLIC_URL%/assets/js/myscript.js"></script>
+    <!--<![endif]-->
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-123402483-3"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "UA-123402483-3");
+    </script>
   </body>
 </html>

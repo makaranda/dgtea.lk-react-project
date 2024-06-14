@@ -1,0 +1,4 @@
+[19-Sep-2018 06:39:35 UTC] PHP Deprecated:  preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead in /home/damrotea/public_html/assets/php/phpmailer.php on line 1219
+[20-Feb-2019 10:09:09 UTC] PHP Deprecated:  preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead in /home/damrotea/public_html/assets/php/phpmailer.php on line 1219
+[07-Apr-2019 18:32:16 UTC] PHP Deprecated:  preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead in /home/damrotea/public_html/assets/php/phpmailer.php on line 1219
+[20-Jun-2019 15:25:41 UTC] PHP Deprecated:  preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead in /home/damrotea/public_html/assets/php/phpmailer.php on line 1219
