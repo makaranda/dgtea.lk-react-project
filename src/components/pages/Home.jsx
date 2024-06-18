@@ -5,6 +5,7 @@ import $ from "jquery";
 // window.jQuery = $;
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
+import { Link } from "react-router-dom";
 
 const Home = () => {
   const carouselRef = useRef(null);
@@ -67,9 +68,9 @@ const Home = () => {
               </div>
               <div class="col-md-6">
                 <div class="thumbnail no-border no-padding thumbnail-banner size-1x3">
-                  <a href="outlets.php">
+                  <Link to="/outlets/page/1">
                     <img src="image/rightsidebanner.jpg" />
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>

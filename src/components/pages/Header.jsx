@@ -1,7 +1,14 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link, Router, Route, Switch, NavLink } from "react-router-dom";
 
 const Header = () => {
+  const [isHighlighted, setIsHighlighted] = useState(false);
+  const toggleHighlight2 = () => {
+    setIsHighlighted(!isHighlighted);
+  };
+  const toggleHighlight = () => {
+    setIsHighlighted(!isHighlighted);
+  };
   return (
     <div>
       <header className="header fixed">
@@ -11,7 +18,7 @@ const Header = () => {
               <Link to="/">
                 <img
                   style={{ width: "140px !important" }}
-                  src="image/logoweb.png"
+                  src="/image/logoweb.png"
                   alt="Damro Tea"
                 />
               </Link>
@@ -20,7 +27,8 @@ const Header = () => {
               <div className="cart-wrapper">
                 <Link
                   href="#"
-                  className="menu-toggle btn btn-theme-transparent"
+                  className="menu-toggle btn btn-theme-transparent mobile_nav_btn"
+                  onClick={toggleHighlight}
                 >
                   <i className="fa fa-bars"></i>
                 </Link>
@@ -31,8 +39,18 @@ const Header = () => {
 
         <div className="navigation-wrapper">
           <div className="container">
-            <nav className="navigation closed clearfix">
-              <Link href="#" className="menu-toggle-close btn">
+            <nav
+              className={
+                isHighlighted
+                  ? "clearfix navigation"
+                  : "closed clearfix navigation"
+              }
+            >
+              <Link
+                href="#"
+                className="menu-toggle-close btn"
+                onClick={toggleHighlight2}
+              >
                 <i className="fa fa-times"></i>
               </Link>
               <ul className="nav sf-menu">
@@ -52,8 +70,8 @@ const Header = () => {
                   </Link>
                 </li>
                 <li
-                  className="active"
-                  style={{ marginTop: "14px", marginLeft: "50px" }}
+                  className="active ml-0 ml-sm-0 ml-md-5"
+                  style={{ marginTop: "14px" }}
                 >
                   <NavLink className="hoo" to="/" activeClassName="active">
                     Home
