@@ -63,7 +63,7 @@ const Header = () => {
                         width: "140px",
                         marginBottom: "0px",
                       }}
-                      src="/image/logoweb2.png"
+                      src="/image/logoweb.png"
                       alt="Damro Tea"
                       className="logo-pc-size"
                     />
