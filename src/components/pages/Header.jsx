@@ -18,7 +18,7 @@ const Header = () => {
               <Link to="/">
                 <img
                   style={{ width: "140px !important" }}
-                  src="/image/logoweb.png"
+                  src="/image/logoweb2.png"
                   alt="Damro Tea"
                 />
               </Link>
